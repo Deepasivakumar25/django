@@ -1,0 +1,36 @@
+{% load static %}
+<html>
+    <head>
+        <title>{% block title %}layout{% endblock title %}</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}"/>
+    </head>
+    <body>
+        {% block outofblock %}
+        {% endblock %}
+
+        <div class="container">
+            <div class="row">
+                <div class="col-4 text-primary">
+
+                </div>
+                <div class="col-4 text-danger">
+                    <h1>
+                    {% block col2 %}
+ 
+                    {% endblock col2 %}
+                    </h1>
+                    
+                </div>
+                <div class="col-4 text-info">
+                    {% block col1 %}q
+ w
+                    {% endblock col1 %}
+                    
+                </div>
+
+            </div>
+
+        </div>
+       <h1>Wednesday</h1>
+    </body>
+</html>
